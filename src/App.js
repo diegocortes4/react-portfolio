@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import About from './pages/About';
+import About from './pages/Portfolio';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -22,7 +23,7 @@ function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
           </ul>
         </nav>
@@ -33,7 +34,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
+          <Route path="/portfolio">
             <Portfolio />
           </Route>
           <Route path="/">
